@@ -28,6 +28,13 @@
 								{{ profileDetails.email}}
 							</a>
 						</p>
+						<!-- contact -->
+						<p class="pt-2 text-gray-600 dark:text-gray-100 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+							<i class="fab fa-linkedin text-blue-600 pr-4"></i>
+							<a class="underline" :href="`${profileDetails.linkedin}`" target="_blank">
+								{{ profileDetails.linkedin}}
+							</a>
+						</p>
 						<!-- <p class="pt-2 text-gray-600 dark:text-gray-100 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
 							<i class="fab fa-github text-blue-600 pr-4"></i>
 							<a target="_blank" :href="`https://github.com/${profileDetails.github}`">
@@ -42,7 +49,7 @@
 								Download CV
 							</a> 
 						</div>
-
+	
 						<!-- Tools links -->
 						<div class="flex justify-between items-center lg:pb-0 lg:w-full mx-auto sm:pb-16 pb-6 sm:w-4/5">
 							<img class="sm:h-7 h-6" src="@/assets/img/icons/vue.png" alt="vue">
@@ -172,10 +179,11 @@ export default {
 			profileDetails: {
 				name: 'Allan Cheam Alzula',
 				jobDesc: 'Web Developer',
-				email: 'allan.alzula@gmail.com',
+				email: 'allan.alzula.work@gmail.com',
 				location: 'Cagayan de Oro, Philippines 9000',
 				shortDesc: "Web developer having 5+ years of experience. Worked and collaborate on a website and app system, passionate in doing great technology stuff that would help other and make their life easier. Working with me guarantees top quality in both terms.",
 				github: 'neophytes08',
+				linkedin: 'https://www.linkedin.com/in/allan-cheam-alzula-431262117'
 			}
 		}
 	},

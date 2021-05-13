@@ -9,8 +9,8 @@
           <h1 class="title-font text-lg font-medium text-gray-900 dark:text-gray-100 mb-3">{{list.title}}</h1>
           <p class="leading-relaxed mb-3">{{list.description}}</p>
           <div class="flex items-center flex-wrap" v-for="(list, index) in list.github" :key="index">
-            <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0" target="_blank" :href="list">
-              {{ list }}
+            <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0" target="_blank" :href="list.url">
+              {{ list.name }}
               <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14"></path>
                 <path d="M12 5l7 7-7 7"></path>
@@ -36,32 +36,65 @@ export default {
           subTitle:'VueJS, NodeJS',
           title: 'Empat Kali',
           description: `This is the official website of Empat Kali which technically built using WordPress. Bust most of its app i.e. admin, merchant, store dashboards were built using VueJS and NodeJS for API. I am also one of the front-end dev working on maintaning the website and wordpress plugins of Empatkali including plugins for Magento, Prestashop and Shopify.`,
-          github: ['https://www.empatkali.co.id']
+          github: [
+            {
+              name: 'Empat Kali',
+              url: 'https://www.empatkali.co.id'
+            }
+          ]
 
 				},
 				{
-          img: require('@/assets/img/projectsThumbnail/mednefits.png'),
+          img: require('@/assets/img/projectsThumbnail/mednefitsdash.png'),
           subTitle:'AngularJS, Laravel',
           title: 'Mednefits App (Old Website)',
           description: `Old Mednefits using Angularjs 1 and Laravel. I am one of the Back-End devs that develop and maintained the old Mednefits System. Due to rapid growth of the system, the company decided to migrate it to newer framework to accomodate more users and system reliability. I am also responsible for creating APIs for mobile application of Mednefits as well as responsible for creating and mainting server performances using Amazon Web Services (AWS)`,
-          github: ['https://www.mednefits.com']
-
+          github: [
+            {
+              name: 'Mednefits App (Old Website)',
+              url: 'https://www.medicloud.sg'
+            }
+          ]
 				},
         {
           img: require('@/assets/img/projectsThumbnail/dasboardmednefits.png'),
           subTitle:'VueJS, AngularJS, Laravel, NodeJS',
           title: 'Mednefits App Migration',
           description: `App migration in their admin portal and mobile api, the current app of mednefits been using angularJs from the start and company is growing fast and app is getting slower due to outdated version of angular, I'm part of the project whos working to migrate the app from Laravel to Nodejs as a Back-End Dev.`,
-          github: ['https://www.mednefits.com', 'https://github.com/neophytes08/mednefits_node_mobile_api']
-
+          github: [
+            {
+              name: 'Mednefits App Migration Site',
+              url: 'https://www.mednefits.com'
+            },
+            {
+              name: 'Mednefits App Migration Repo',
+              url: 'https://github.com/neophytes08/mednefits_node_mobile_api'
+            }
+          ]
 				},
 				{
           img: require('@/assets/img/projectsThumbnail/mednefits.png'),
           subTitle:'Laravel, VueJS',
           title: 'Mednefits Analytics Dashboard',
           description: `Developed the API for users consumption using Laravel. Collaborate to create api analytics to use by the Front-End Devs.`,
-          github: ['https://github.com/neophytes08/vue_mednefits_analytics']
-
+          github: [
+            {
+              name: 'Mednefits Analytics Dashboard Repo',
+              url: 'https://github.com/neophytes08/vue_mednefits_analytics'
+            }
+          ]
+				},
+        {
+          img: require('@/assets/img/projectsThumbnail/groupstar.png'),
+          subTitle:'',
+          title: 'Group Star (AdHero, PrecisionBit) Singapore',
+          description: `PrecisionBit Singapore (Group Star) was born at the Innovation Hub of Telstra, one of Australia's leading telcos, with the purpose of empowering the modern business to communicate more creatively and stay on the cusp of our ever-shifting digital landscape.`,
+          github: [
+            {
+              name: 'Group Star link',
+              url: 'https://drive.google.com/file/d/1_kAfbm7vq_wCDcoqrMT9RyzG578nX3OQ/view?usp=sharing'
+            }
+          ]
 				},
 			],
     }
